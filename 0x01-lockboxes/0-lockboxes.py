@@ -13,7 +13,7 @@ def canUnlockAll(boxes):
         # Enumerates and returns box indices and their corresponding
         # elements which are keys in this case
         if not box_elements:
-            continue        #if the box has no keys/empty, we continue
+            continue        # if the box has no keys/empty, we continue
 
         for key in box_elements:
             if key < len(boxes) and key != box_index and key not in unlocked:

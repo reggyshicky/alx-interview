@@ -18,6 +18,7 @@ def canUnlockAll(boxes):
         for key in box_elements:
             if key < len(boxes) and key != box_index and key not in unlocked:
                 unlocked.append(key)
+                # this step unlocks the box with the key if conditions are met
 
     if len(unlocked) == len(boxes):
         return True

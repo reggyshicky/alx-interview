@@ -50,4 +50,4 @@ def minOperations(n):
         # increments factor by 1, used to check the next possible
         # factor of n
 
-        return operations
+    return operations

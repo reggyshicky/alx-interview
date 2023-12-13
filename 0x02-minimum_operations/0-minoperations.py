@@ -1,4 +1,10 @@
+#!/usr/bin/python3
+
+
 def minOperations(n):
+    """
+    function that finds the minimum operations
+    """
     if n <= 1:
         return 0
 

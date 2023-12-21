@@ -16,7 +16,7 @@ status codes should be printed in ascending order
 import sys
 
 cache = {'200': 0, '301': 0, '400': 0, '401': 0,
-         '400': 0, '404': 0, '404': 0, '500': 0}
+         '403': 0, '404': 0, '405': 0, '500': 0}
 # Initializes a dict named cache with stat codes as keys and
 # their counts as values, all swt to 0 initially
 total_size = 0

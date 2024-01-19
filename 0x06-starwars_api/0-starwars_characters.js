@@ -24,7 +24,7 @@ const requestNames = async () => {
     for (const p of people) {
       await new Promise(resolve => request(p, (err, res, body) => {
         if (err || res.statusCode !== 200) {
-          console.error('Error ', err, '| statusCode: ', res.statusCode);
+          console.error('Error ', err, '| StatusCode: ', res.statusCode);
         } else {
           const jsonBody = JSON.parse(body);
           names.push(jsonBody.name);
@@ -33,7 +33,7 @@ const requestNames = async () => {
       }));
     }
   } else {
-    console.error('Error: Got no characters for some reason');
+    console.error('Error: Got no Characters for some reason');
   }
 };
 
